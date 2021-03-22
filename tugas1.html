@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <!-- memanggil jQuery -->
+        <script type="text/javascript" src="jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            // membuat jQuery untuk tombol
+            $(document).ready(function(){
+			    $(".Sembunyi").click(function(){
+                    $("#pic").hide("slow")}); 
+			    $(".Tampil").click(function(){
+                    $("#pic").show("slow")}); 
+			    $(".Sembunyi2").click(function(){
+                    $("#pic2").hide("slow")});
+			    $(".Tampil2").click(function(){
+                    $("#pic2").show("slow")});
+		    });
+        </script>    
+    </head>
+    <body>
+        <!-- tombol untuk menyembunyikan dan menampilkan -->
+        <button class="Sembunyi">Sembunyikan Gambar</button>
+        <button class="Tampil">Tampilkan Gambar</button>
+        <br>
+        <br>
+        <img id="pic"src="tampan.jpg">
+        <br>
+        <br>
+        <button class="Sembunyi2">Sembunyikan Gambar</button>
+        <button class="Tampil2">Tampilkan Gambar</button>
+        <br>
+        <br>
+        <img id="pic2"src="berani.jpg">
+    </body>
+</html>

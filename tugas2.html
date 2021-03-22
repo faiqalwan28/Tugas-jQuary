@@ -1,0 +1,49 @@
+<html>
+    <head>
+	    <!-- memanggil jQuery -->
+	    <script type="text/javascript" src="jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            // membuat kontrol perubah warna
+		    $(document).ready(function(){
+			    $("#square1").dblclick(function(){
+				    $(".one").css({
+					    'background-color' : 'red'});
+			    });
+			    $("#square2").dblclick(function(){
+				    $(".two").css({
+					    'background-color' :'orange'});
+			    });
+			    $("#square3").dblclick(function(){
+				    $(".three").css({
+					    'background-color' :'violet'});
+			    });
+			    $("#square4").dblclick(function(){
+				    $(".four").css({
+					    'background-color' :'green'});
+			    });
+		    });
+	    </script>
+        <style type="text/css">
+            /* desain kotak */
+	        div { 
+	            width: 100px;
+	            height: 100px;
+	            border-color: yellow;
+	            background-color: yellow;
+	            margin-left:15px;
+	            float:left;		
+	        }
+	    </style>
+    </head>
+    <body>
+        <!-- memanggil javascript -->
+	    <p>bukan sulap bukan sihir, kotak ini bisa berubah
+            warna jika diklik 2x, jika tidak percaya
+            silahkan coba sendiri
+        </p>
+        <div id= "square1" class="one"></div> 
+        <div id= "square2" class="two"></div>
+        <div id= "square3" class="three"></div>
+        <div id= "square4" class="four"></div>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>selector</title>
+        <!-- memanggil javascript -->
+        <script type="text/javascript" src="jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            // mengambil elemen
+            $(document).ready(function () {
+                $("div").addClass("biru");
+            });
+        </script>
+        <!-- merubah text mnjadi biru -->
+        <style type="text/css">
+            .biru{
+                color: blue;
+                font-weight:bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>paragraf pertama</p>
+        </div>
+        <div>
+            <ul>
+                <!-- list -->
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ul>
+        </div>
+    </body>
+</html>

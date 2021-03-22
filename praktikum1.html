@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>jquery</title>
+        <!-- memanggil jquery -->
+        <script src="jquery-3.6.0.js"></script>
+        <!-- javascript -->
+        <script type="text/javascript">
+        $(document).ready(function () {
+            // membuat tombol sembunyi
+            $(".sembunyi").click(function () {
+                $("#foto").hide("slow")});
+            // membuat tombol muncul
+            $(".tampil").click(function () {
+                $("#foto").show("slow")
+            });
+        });
+        </script>
+    </head>
+    <!-- membuat tombol sembunyi dan muncul serta
+    memanggil javascript -->
+    <body>
+        <button class="sembunyi">sembunyikan</button>
+        <button class="tampil">tampilkan</button>
+        <p> <img id="foto" src="logoupnbaru.png"> </p>
+    </body>
+</html>

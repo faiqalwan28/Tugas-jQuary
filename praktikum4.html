@@ -1,0 +1,37 @@
+<html>
+    <head> 
+        <title>selector class</title>
+        <!-- memanggil jquery -->
+        <script type="text/javascript" src="jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            // mengambil elemen jQuery
+            $(document).ready(function () {
+                $("#daftar").addClass("merahkuning");
+                $(".subdaftar").addClass("kuninghitam");
+            });
+        </script>
+        <style type="text/css">
+            .merahkuning{ /* desain untuk merahkuning */
+                color: red;
+                font-weight: bold;
+                background-color: yellow;
+                padding: 3px;
+            }
+            .kuninghitam{ /* desain untuk kuninghitam */
+                color: blue;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div><p>paragrap pertama</p></div>
+        <div>
+            <ul id="daftar"> <!-- mengambil desain -->
+                <li>item1</li>
+                <!-- mengambil desain -->
+                <li class="subdaftar">item2</li> 
+                <li>item3</li>
+            </ul>
+        </div>
+    </body>
+</html>
